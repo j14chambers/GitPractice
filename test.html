@@ -1,4 +1,4 @@
-hello world
+
 
 <h1>Instructions on Using Github on the Command Line</h1>
 
@@ -15,7 +15,7 @@ hello world
 <h3>git clone "put url for repository here"</h3>
 
 <h3>Example: </h3>
-<h3>git clone "j14chambers.github.com/GitPractice.git</h3>
+<h3>git clone "https://github.com/j14chambers/GitPractice.git</h3>
 
 <p>This command adds the all new changes to github</p>
 git add .
@@ -36,3 +36,21 @@ git add test.html
 
 <p>This command pushes the changes made on the local repsitory to github.com.</p>
 <h3>git push origin master</h3>
+
+<p>This command pulls changes made on github.com</p>
+
+<h3>git pull</h3>
+
+<p>Create a new folder on your computer. Open the command line and direct to that folder. By doing this on the computer, you can create a github repository using this command. Make sure you are in the directory where the project will be created.</p>
+
+<h3>git init</h3>
+
+<p>This command  connects the above folder with a github project.</p>
+<h3>Example:</h3>
+<h3>git remote origin https://github.com/j14chambers/GitPractice.git</h3>
+
+<p>Do a git pull origin master to pull files from the directory you were working from above.This command will put all files associated with GiPractice into the new folder created.<br>
+To make it simple: The file just created acts as another person. The orignal file from github cloned, represents you.</p>
+
+<p> For example: <br>
+There is a team of 2 people, working on the same project. One person creates the project on github.com and calls it Project1. That person make a clone of that project and starts making changes to the files. That person then pushes the changes to github.com. The second person comes along and makes a local directory on their computer called Testfiles. That person wants to know if there are changes to the project that they are working and does a git remote origin to link their local directory to github. The second person does a pull for Project1 and now have those files on their local repository. The second person only made minor changes to the file and does a push to the master branch in Project1. So now the changes that the second person made are now on github.com and the first person can see those changes.</p>
